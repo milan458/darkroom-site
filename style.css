@@ -1,0 +1,12 @@
+:root { --bg:#0C0A09; --panel:#1A1512; --line:#2A2420; --text:#EDE6DF; --muted:#A89F96; --safelight:#E2453A; --amber:#F2B35E; --ok:#6FB98F; }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 "DM Mono", ui-monospace, Menlo, monospace; }
+main { max-width: 720px; margin: 0 auto; padding: 48px 20px 80px; }
+.status { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--text); display:flex; align-items:center; gap:8px; }
+.status::before { content:""; width:7px; height:7px; border-radius:50%; background:var(--safelight); box-shadow:0 0 6px var(--safelight); }
+h1 { font-family:"Archivo Narrow", "Arial Narrow", sans-serif; font-weight:700; text-transform:uppercase; font-size:clamp(40px, 9vw, 58px); line-height:1; margin:14px 0 24px; }
+h2 { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--amber); margin:40px 0 8px; }
+p, li { color:var(--text); } .muted { color:var(--muted); }
+a { color:var(--amber); }
+.card { background:var(--panel); border-radius:6px; padding:16px 18px; margin:12px 0; }
+nav { display:flex; gap:20px; font-size:13px; letter-spacing:.08em; text-transform:uppercase; margin-top:48px; border-top:1px solid var(--line); padding-top:20px; }
